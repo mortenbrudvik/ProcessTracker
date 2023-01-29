@@ -1,3 +1,3 @@
 ﻿namespace ProcessTracker;
 
-public record ApplicationProcess(int Id, string Name);
+public record ApplicationProcess(int Id, string Name, nint MainWindowHandle = default);

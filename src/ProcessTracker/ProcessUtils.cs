@@ -10,7 +10,7 @@ public static class ProcessUtils
         foreach (var process in processes)
         {
             if (filter(process))
-                yield return new ApplicationProcess(process.Id, process.ProcessName);
+                yield return new ApplicationProcess(process.Id, process.ProcessName, process.MainWindowHandle);
         }
     }
 }
